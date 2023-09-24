@@ -1,0 +1,623 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link href="imgs/favicon.ico" rel="icon" type="image/png" />
+
+    <!-- animate css-->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+
+    <!-- link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- link fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
+    />
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="css/stylecss.css" />
+
+    <!-- link fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Daniels</title>
+  </head>
+
+  <body>
+    <!-- splash page-->
+    <div class="splash-page position-fixed bg-transparent w-100">
+      <div class="splash-page-up w-100 position-absolute top-0"></div>
+      <div class="loader-circle"></div>
+      <div class="splash-page-down w-100 position-absolute bottom-0"></div>
+    </div>
+    <!-- header-part -->
+    <div class="header-part" id="Home">
+      <!-- layer-header-->
+      <div class="layer-header position-absolute w-100 h-100">
+        <!-- navbar-->
+        <nav
+          class="navbar fixed-top rounded-bottom-2 z-2 navbar-expand-lg p-md-4"
+        >
+          <div class="container px-md-5">
+            <a class="navbar-brand" href="#">DANIELS</a>
+            <button
+              class="navbar-toggler z-3 text-white border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div
+                class="navbar-nav d-flex justify-content-md-end mx-md-2 px-md-2 w-100"
+              >
+                <a class="nav-link px-4 active" aria-current="page" href="#Home"
+                  >Home
+                </a>
+                <a class="nav-link px-4" href="#About">About</a>
+                <a class="nav-link px-4" href="#Services">Services</a>
+                <a class="nav-link px-4" href="#Works">Works</a>
+                <a class="nav-link px-4" href="#Clients">Clients</a>
+                <a class="nav-link px-4" href="#Team">Team</a>
+                <a class="nav-link px-4" href="#Contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="caption d-flex justify-content-center h-100 flex-column text-center"
+        >
+          <h1 class="text-white">Hello</h1>
+          <p class="text-white">I Am <span id="header-text"></span></p>
+          <div class="social-header m-5">
+            <ul>
+              <li class="d-inline">
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook p-2 bg-transparent rounded-circle fs-5 text-white"
+                  ></i
+                ></a>
+              </li>
+              <li class="d-inline">
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-twitter p-2 bg-transparent rounded-circle fs-5 text-white"
+                  ></i
+                ></a>
+              </li>
+              <li class="d-inline">
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-pinterest p-2 bg-transparent rounded-circle fs-5 text-white"
+                  ></i
+                ></a>
+              </li>
+              <li class="d-inline">
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-linkedin p-2 bg-transparent rounded-circle fs-5 text-white"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end navbar-->
+      </div>
+      <!-- end layer-header-->
+    </div>
+
+    <!-- end header-part -->
+
+    <!--About Me-->
+    <div class="about-me container" id="About">
+      <div class="row m-auto g-5 py-5">
+        <div class="col-4">
+          <img src="imgs/hero.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-7">
+          <h1>About Me.</h1>
+          <p>UI / UX DESIGNER & WEB DEVELOPER</p>
+          <p>
+            I am <span style="font-weight: bold" id="typed-ele"></span><br />
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem has been the industry's standard dummy text ever It
+            has survived not only five centuries, but also the leap into
+            electronic but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing
+          </p>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              id="0"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar-text">
+                <h6 class="float-start m-0 px-2">Web Design</h6>
+                <h6 class="float-end m-0 px-2">95%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              id="1"
+              role="progressbar"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar-text">
+                <h6 class="float-start m-0 px-2">Branding</h6>
+                <h6 class="float-end m-0 px-2">80%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              id="2"
+              role="progressbar"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar-text">
+                <h6 class="float-start m-0 px-2">Development</h6>
+                <h6 class="float-end m-0 px-2">90%</h6>
+              </div>
+            </div>
+          </div>
+          <div class="btns-about-me">
+            <button type="button" class="btn btn-dark m-1 py-2">
+              Download C.V</button
+            ><button
+              type="button"
+              class="btn btn-light border-1 m-1 py-2 border-dark"
+              style="box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About-me -->
+
+    <!--- Services-->
+    <div class="services" id="Services">
+      <div class="container text-center p-5">
+        <h1 class="fs-1">Serivces.</h1>
+        <div class="service-items row g-5 container">
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4 h-100">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+              <h1 class="p-2">Web Design</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4 h-100">
+              <i class="fa fa-bullhorn" aria-hidden="true"></i>
+              <h1 class="p-2">Branding</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4 h-100">
+              <i class="fa fa-diamond" aria-hidden="true"></i>
+              <h1 class="p-2">Creative Design</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4 h-100">
+              <i class="fa fa-television" aria-hidden="true"></i>
+              <h1 class="p-2">Fully Responsive</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4 h-100">
+              <i class="fa fa-camera" aria-hidden="true"></i>
+              <h1 class="p-2">Retina Ready</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item-service shadow-sm py-5 bg-white rounded-4">
+              <i class="fa fa-laptop" aria-hidden="true"></i>
+
+              <h1 class="p-2">Web Design</h1>
+              <p class="p-3">
+                Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
+                industry's standard dummy text ever
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio-->
+    <div class="portfolio text-center container py-5" id="Works">
+      <h1>Portfolio.</h1>
+      <div
+        class="header-portfolio py-5 d-flex justify-content-md-center align-items-md-center gap-5 container"
+      >
+        <p>All</p>
+        <p>Brand</p>
+        <p>Design</p>
+        <p>Graphic</p>
+      </div>
+      <div class="items-portfolio row g-5 container">
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+
+            <img src="imgs/portfolio/1.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+            <img src="imgs/portfolio/2.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <img src="imgs/portfolio/3.jpg" class="img-fluid" alt="" />
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <img src="imgs/portfolio/4.jpg" class="img-fluid" alt="" />
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+            <img src="imgs/portfolio/5.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-portfolio position-relative">
+            <div class="white-layer bg-white text-center">
+              <h1>WEB DESIGN</h1>
+            </div>
+            <img src="imgs/portfolio/6.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--end - portfolio-->
+
+    <!-- Testimonials. -->
+    <div class="testimonials container-fluid text-center" id="Clients">
+      <h1>Testimonials.</h1>
+      <br />
+      <div
+        id="carouselExampleDark"
+        class="carousel carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imgs/1_New1.jpg" class="img-carousel" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imgs/1_New1.jpg" class="img-carousel" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--part numbers-->
+    <div class="number-containers m-5 row">
+      <div class="col-md-3 item-icon text-center">
+        <i class="fa fa-user"></i>
+        <h3 class="count Happy-Customers">850</h3>
+        <p>Happy Customers</p>
+      </div>
+      <div class="col-md-3 item-icon text-center">
+        <i class="fa fa-thumbs-up"></i>
+        <h3 class="count Complete-Projects">230</h3>
+        <p>Complete Projects</p>
+      </div>
+      <div class="col-md-3 item-icon text-center">
+        <i class="fa fa-bullhorn"></i>
+        <h3 class="count Lines-Of-Code">9450</h3>
+        <p>Lines Of Code</p>
+      </div>
+      <div class="col-md-3 item-icon text-center">
+        <i class="fa fa-cloud-download"></i>
+        <h3 class="count Files Downloaded">780</h3>
+        <p>Files Downloaded</p>
+      </div>
+    </div>
+    <!--- Our Team. -->
+    <div class="our-team container-fluid p-5 text-center" id="Team">
+      <h1>Our Team.</h1>
+      <div class="team-items m-5 p-5 g-3 row">
+        <div class="col-md-4 position-relative">
+          <div class="item-team position-relative">
+            <div
+              class="layer bg-white position-absolute d-flex align-items-center justify-content-center"
+            >
+              <div class="social m-5">
+                <ul>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-facebook p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-twitter p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-pinterest p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-linkedin p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img src="imgs/devf.jpg " class="img-fluid rounded-top-2" alt="" />
+          </div>
+          <div class="text bg-dark p-2 text-white">
+            <h3>John Doe</h3>
+            <p>FRONT-END DEVELOPER</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-team position-relative">
+            <div
+              class="layer bg-white position-absolute d-flex align-items-center justify-content-center"
+            >
+              <div class="social m-5">
+                <ul>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-facebook p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-twitter p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-pinterest p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-linkedin p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <img src="imgs/dev-d.jpg " class="w-100 rounded-top-2" alt="" />
+          </div>
+          <div class="text bg-dark p-2 text-white">
+            <h3>Dave Wood</h3>
+            <p>Back-END DEVELOPER</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="item-team position-relative">
+            <div
+              class="layer bg-white position-absolute d-flex align-items-center justify-content-center"
+            >
+              <div class="social m-5">
+                <ul>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-facebook p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-twitter p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-pinterest p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="d-inline">
+                    <a href="#"
+                      ><i
+                        class="fa-brands fa-linkedin p-2 bg-dark rounded-circle fs-5 text-white"
+                      ></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <img src="imgs/devf.jpg" class="img-fluid rounded-top-2" alt="" />
+          </div>
+          <div class="text bg-dark p-2 text-white">
+            <h3>Mohammed Gad</h3>
+            <p>Full-Stack Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Us. -->
+    <div class="contact-us container-fluid p-5 text-center" id="Contact">
+      <h1>Contact Us.</h1>
+      <div class="team-items m-5 p-5 g-3 row">
+        <div class="item col-md-4">
+          <div class="icon">
+            <i class="fa fa-location-arrow p-3 rounded-circle"></i>
+          </div>
+
+          <div class="text">
+            <h5>Address</h5>
+            <p>6834 Hollywood Blvd - Los Angeles CA</p>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <div class="icon">
+            <i class="fa fa-envelope p-3 rounded-circle"></i>
+          </div>
+
+          <div class="text">
+            <h5>Email</h5>
+            <p>mohamedgad199@gmail.com</p>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <div class="icon"><i class="fa fa-phone p-3 rounded-circle"></i></div>
+          <div class="text">
+            <h5>Phone</h5>
+            <p>+201013728816</p>
+          </div>
+        </div>
+
+        <form>
+          <div class="inputs container g-3 row">
+            <div class="input col-md-6">
+              <input type="text" placeholder=" Name" class="w-100" />
+            </div>
+            <div class="input col-md-6">
+              <input class="w-100" type="email" placeholder=" Email" />
+            </div>
+            <div class="textarea col-md-12">
+              <textarea
+                type="text"
+                class="w-100"
+                placeholder=" massage"
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn mt-3">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!--- footer  -->
+    <div class="footer bg-dark container-fluid text-md-center">
+      <p>Copy Right 2023 © By MohammedGad All Rights Reserved</p>
+    </div>
+
+    <!-- scrpits-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
